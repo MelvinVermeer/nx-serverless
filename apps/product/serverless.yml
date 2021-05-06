@@ -1,0 +1,27 @@
+service: product
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: eu-west-1
+  lambdaHashingVersion: 20201221
+
+custom:
+  webpack:
+    webpackConfig: 'webpack.config.js'
+    includeModules: true
+    packager: 'npm'
+    packExternalModulesMaxBuffer: 204800
+
+plugins:
+  - serverless-webpack
+
+functions:
+  hello:
+    handler: src/functions/hello.handler
+    description: A function for Hello Application
+    events:
+      - http:
+          path: /hello
+          private: false
+          method: get

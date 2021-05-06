@@ -6,6 +6,6 @@ export const handler = async () => {
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ message: 'PRICING: ' + commonHelpers() }),
+    body: JSON.stringify({ message: 'PRODUCT: ' + commonHelpers() }),
   };
 };
