@@ -1,3 +1,3 @@
 export function commonHelpers(): string {
-  return 'common-helpers';
+  return 'common-helpers#';
 }
