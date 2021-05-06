@@ -31,6 +31,13 @@
             }
           }
         },
+        "deploy": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": ["sls deploy"],
+            "cwd": "apps/product"
+          }
+        },
         "serve": {
           "executor": "@nrwl/node:execute",
           "options": { "buildTarget": "product:build" }
@@ -75,6 +82,13 @@
                 }
               ]
             }
+          }
+        },
+        "deploy": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": ["sls deploy"],
+            "cwd": "apps/pricing"
           }
         },
         "serve": {
