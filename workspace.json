@@ -15,7 +15,7 @@
             "outputPath": "dist/apps/product",
             "main": "apps/product/src/main.ts",
             "tsConfig": "apps/product/tsconfig.app.json",
-            "assets": ["apps/product/src/assets"]
+            "assets": []
           },
           "configurations": {
             "production": {
@@ -68,7 +68,7 @@
             "outputPath": "dist/apps/pricing",
             "main": "apps/pricing/src/main.ts",
             "tsConfig": "apps/pricing/tsconfig.app.json",
-            "assets": ["apps/pricing/src/assets"]
+            "assets": []
           },
           "configurations": {
             "production": {
